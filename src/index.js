@@ -6,14 +6,19 @@ const AppHeader = () => {
 };
 
 const SearchPanel = () => {
-  return <input placeholder={'search'} />;
+  const searchText = 'Type here to search';
+  const searchStyle = {
+    fontSize: '20px'
+  };
+  return <input placeholder={searchText} style={searchStyle} />;
 };
 
 const TodoList = () => {
+  const items = ['Learn React', 'Build Awesome App'];
   return (
     <ul>
-      <li>Learn React</li>
-      <li>Build App</li>
+      <li>{items[0]}</li>
+      <li>{items[1]}</li>
     </ul>
   );
 };
